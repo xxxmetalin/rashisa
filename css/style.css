@@ -1,0 +1,238 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ================================
+   Base
+================================ */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ================================
+   Layout
+================================ */
+.l-section {
+  width: 100%;
+}
+
+.l-section__inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ================================
+   Sections
+================================ */
+.hero {
+  background-color: #FFFFFF;
+}
+
+.video {
+  background-color: #F9FFFD;
+}
+
+.video__wrap {
+  position: relative;
+}
+
+.video__frame {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45.3%;      /* 調整してね */
+  width: 91%;    /* 調整してね */
+  aspect-ratio: 16 / 9;
+  
+  /* 確認用（後で消す） */
+  /* background: rgba(255, 0, 0, 0.5); */
+}
+
+.video__frame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================================
+   CTA共通
+================================ */
+.cta {
+  background-color: #25ACA5;
+}
+
+.cta__wrap {
+  position: relative;
+}
+
+.cta__btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.3s;
+  /* 確認用 */
+  /* background: rgba(255, 0, 0, 0.3);
+  outline: 2px solid red; */
+}
+
+.cta__btn img {
+  display: block;
+  width: 100%;
+}
+
+.cta__btn:hover {
+  opacity: 0.8;
+  transform: translateX(-50%) scale(1.02);
+}
+
+/* ================================
+   CTA① 
+================================ */
+.cta .cta__btn {
+  top: 39.5%;
+  width: 80%;
+}
+
+/* ================================
+   CTA②（特典付き）
+================================ */
+.cta-bonus {
+  background-color: #25ACA5;
+}
+
+.cta-bonus .cta__btn {
+  top: 89.5%;
+  width: 78%;
+}
+
+.intro {
+  background-color: #FFFFFF;
+}
+
+.market {
+  background-color: #FFFFFF;
+}
+
+.strengths {
+  background-color: rgba(29, 141, 136, 0.7);
+}
+
+.results {
+  background-color: #F0F4F5;
+}
+
+.comparison {
+  background-color: #FFFFFF;
+}
+
+.support {
+  background-color: #E9F7F7;
+}
+
+.advisor {
+  background-color: #FFFFFF;
+}
+
+.cta-bonus {
+  background-color: #25ACA5;
+}
+
+.faq {
+  background-color: #F0F4F5;
+}
+
+.message {
+  background-color: #CDE9F7;
+}
+
+/* ================================
+   Footer
+================================ */
+.l-footer {
+  background-color: #FDFAF5;
+}
+
+.l-footer__inner {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.l-footer__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.l-footer__nav {
+  margin-bottom: 24px;
+}
+
+.l-footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.l-footer__nav-link {
+  display: block;
+  padding: 12px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.l-footer__bottom-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+}
+
+.l-footer__bottom-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.l-footer__copyright {
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+}
+
+.l-footer__copyright p {
+  margin: 0;
+}
+
+/* ================================
+   CTA 固定
+================================ */
+.fixed-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.fixed-cta.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fixed-cta__inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.fixed-cta__inner img {
+  display: block;
+  width: 100%;
+}
