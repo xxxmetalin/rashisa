@@ -24,14 +24,17 @@ img {
 }
 
 /* ================================
-   Sections
+   Hero（FV）
 ================================ */
 .hero {
   background-color: #FFFFFF;
 }
 
+/* ================================
+   Video（動画視聴）
+================================ */
 .video {
-  background-color: #F9FFFD;
+  background-color: #FFFFFF;
 }
 
 .video__wrap {
@@ -43,7 +46,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   top: 45.3%;      /* 調整してね */
-  width: 91%;    /* 調整してね */
+  width: 91%;      /* 調整してね */
   aspect-ratio: 16 / 9;
   
   /* 確認用（後で消す） */
@@ -58,10 +61,6 @@ img {
 /* ================================
    CTA共通
 ================================ */
-.cta {
-  background-color: #25ACA5;
-}
-
 .cta__wrap {
   position: relative;
 }
@@ -87,70 +86,145 @@ img {
 }
 
 /* ================================
-   CTA① 
+   CTA①
 ================================ */
+.cta {
+  background-color: #FFF3D1;
+}
+
 .cta .cta__btn {
-  top: 39.5%;
-  width: 80%;
+  top: 39.5%;      /* 調整してね */
+  width: 80%;      /* 調整してね */
 }
 
 /* ================================
-   CTA②（特典付き）
+   Steps（説明会参加までの3STEP）
 ================================ */
-.cta-bonus {
-  background-color: #25ACA5;
-}
-
-.cta-bonus .cta__btn {
-  top: 89.5%;
-  width: 78%;
-}
-
-.intro {
+.steps {
   background-color: #FFFFFF;
 }
 
+/* ================================
+   Video Chapters（動画シーンジャンプ）
+================================ */
+.video-chapters {
+  background-color: #FFF3D1;
+}
+
+.video-chapters__wrap {
+  position: relative;
+}
+
+.video-chapters__buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;        /* 調整してね */
+  width: 90%;      /* 調整してね */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.video-chapters__btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  text-align: left;
+}
+
+.video-chapters__btn:hover {
+  background-color: #FFF8E8;
+  border-color: #F5A623;
+  transform: translateY(-2px);
+}
+
+.video-chapters__time {
+  font-size: 14px;
+  font-weight: 700;
+  color: #F5A623;
+  min-width: 50px;
+}
+
+.video-chapters__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* ================================
+   Market（市場規模）
+================================ */
 .market {
   background-color: #FFFFFF;
 }
 
-.strengths {
-  background-color: rgba(29, 141, 136, 0.7);
-}
-
-.results {
-  background-color: #F0F4F5;
-}
-
-.comparison {
+/* ================================
+   Reasons Stability（手堅い4つの理由）
+================================ */
+.reasons-stability {
   background-color: #FFFFFF;
 }
 
-.support {
-  background-color: #E9F7F7;
-}
-
-.advisor {
+/* ================================
+   Reasons Choice（らしさが選ばれている理由）
+================================ */
+.reasons-choice {
   background-color: #FFFFFF;
 }
 
-.cta-bonus {
-  background-color: #25ACA5;
+/* ================================
+   Strength（らしさ5つの強み）
+================================ */
+.strength {
+  background-color: #FFFFFF;
 }
 
-.faq {
-  background-color: #F0F4F5;
+/* ================================
+   Info（オンライン説明会のご案内）
+================================ */
+.info {
+  background-color: #FFFFFF;
 }
 
+/* ================================
+   Message（代表メッセージ）
+================================ */
 .message {
-  background-color: #CDE9F7;
+  background-color: #FFFFFF;
+}
+
+/* ================================
+   FAQ（よくあるご質問）
+================================ */
+.faq {
+  background-color: #F6F6F6;
+}
+
+/* ================================
+   CTA Bonus（特典付きCTA）
+================================ */
+.cta-bonus {
+  background-color: #FFFFFF;
+}
+
+.cta-bonus .cta__btn {
+  top: 89.5%;      /* 調整してね */
+  width: 78%;      /* 調整してね */
 }
 
 /* ================================
    Footer
 ================================ */
 .l-footer {
-  background-color: #FDFAF5;
+  background-color: #E7F8FF;
 }
 
 .l-footer__inner {
@@ -164,6 +238,7 @@ img {
   font-weight: bold;
   text-align: center;
   margin-bottom: 24px;
+  color: #333333;
 }
 
 .l-footer__nav {
@@ -176,12 +251,25 @@ img {
   margin: 0;
 }
 
+.l-footer__nav-item {
+  border-bottom: 1px solid #D0E8F0;
+}
+
+.l-footer__nav-item:first-child {
+  border-top: 1px solid #D0E8F0;
+}
+
 .l-footer__nav-link {
   display: block;
   padding: 12px 0;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s;
+}
+
+.l-footer__nav-link:hover {
+  color: #0099CC;
 }
 
 .l-footer__bottom-nav {
@@ -193,15 +281,20 @@ img {
 }
 
 .l-footer__bottom-link {
-  color: #666;
+  color: #666666;
   text-decoration: none;
   font-size: 12px;
+  transition: color 0.3s;
+}
+
+.l-footer__bottom-link:hover {
+  color: #0099CC;
 }
 
 .l-footer__copyright {
   text-align: center;
   font-size: 11px;
-  color: #999;
+  color: #999999;
 }
 
 .l-footer__copyright p {
@@ -209,7 +302,7 @@ img {
 }
 
 /* ================================
-   CTA 固定
+   Fixed CTA（固定CTA）※保留中
 ================================ */
 .fixed-cta {
   position: fixed;

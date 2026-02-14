@@ -5,196 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="noindex">
-  <title>LP</title>
+  <title>らしさFN｜無料オンライン説明会</title>
   
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- FV -->
+     <!-- あとでCTAボタン調整 -->
   <section class="l-section hero">
     <div class="l-section__inner">
-      <img src="images/hero.webp" alt="">
+      <img src="images/hero.png" alt="">
     </div>
   </section>
 
-<section class="l-section video" id="video">
-  <div class="l-section__inner">
-    <div class="video__wrap">
-      <img src="images/video.webp" alt="">
-      <div class="video__frame">
-        <!-- 調整完了後にiframeに差し替え -->
-        <iframe 
-          id="ytPlayer"
-          src="https://www.youtube.com/embed/動画ID?enablejsapi=1" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
+  <!-- 動画視聴 -->
+        <!-- あとで位置調整 -->
+  <section class="l-section video" id="video">
+    <div class="l-section__inner">
+      <div class="video__wrap">
+        <img src="images/video.png" alt="">
+        <div class="video__frame">
+          <iframe 
+            id="ytPlayer"
+            src="https://www.youtube.com/embed/xxxxxxxxxxx?enablejsapi=1" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- 動画秒数ジャンプ用
-ボタン例
-<button onclick="jumpTo(30)">0:30から見る</button>
-<button onclick="jumpTo(120)">2:00から見る</button> -->
-
-
-<!-- CTA① -->
-<section class="l-section cta">
-  <div class="l-section__inner">
-    <div class="cta__wrap">
-      <img src="images/cta-bg.webp" alt="">
-      <a href="リンク先URL" class="cta__btn">
-        <img src="images/btn.webp" alt="無料オンライン説明会に参加する">
-      </a>
-    </div>
-  </div>
-</section>
-
-  <section class="l-section intro" id="intro">
+  <!-- CTA① -->
+        <!-- あとでCTAボタン調整 -->
+  <section class="l-section cta">
     <div class="l-section__inner">
-      <img src="images/intro.webp" alt="" loading="lazy">
+      <div class="cta__wrap">
+        <img src="images/cta-bg.png" alt="">
+        <a href="#" class="cta__btn">
+          <img src="images/btn.png" alt="無料オンライン説明会に参加する">
+        </a>
+      </div>
     </div>
   </section>
 
+  <!-- 説明会参加までの3STEP -->
+  <section class="l-section steps" id="steps">
+    <div class="l-section__inner">
+      <img src="images/steps.png" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <!-- 動画シーンジャンプ -->
+  <section class="l-section video-chapters" id="video-chapters">
+    <div class="l-section__inner">
+      <div class="video-chapters__wrap">
+        <img src="images/video-chapters.png" alt="" loading="lazy">
+        <div class="video-chapters__buttons">
+          <button class="video-chapters__btn" data-time="0">
+            <span class="video-chapters__time">0:00</span>
+            <span class="video-chapters__label">オープニング</span>
+          </button>
+          <button class="video-chapters__btn" data-time="60">
+            <span class="video-chapters__time">1:00</span>
+            <span class="video-chapters__label">チャプター1</span>
+          </button>
+          <button class="video-chapters__btn" data-time="120">
+            <span class="video-chapters__time">2:00</span>
+            <span class="video-chapters__label">チャプター2</span>
+          </button>
+          <button class="video-chapters__btn" data-time="180">
+            <span class="video-chapters__time">3:00</span>
+            <span class="video-chapters__label">チャプター3</span>
+          </button>
+          <button class="video-chapters__btn" data-time="240">
+            <span class="video-chapters__time">4:00</span>
+            <span class="video-chapters__label">チャプター4</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 市場規模 -->
   <section class="l-section market" id="market">
     <div class="l-section__inner">
-      <img src="images/market.webp" alt="" loading="lazy">
+      <img src="images/market.png" alt="" loading="lazy">
     </div>
   </section>
 
-  <section class="l-section strengths" id="strengths">
+  <!-- 手堅い4つの理由 -->
+  <section class="l-section reasons-stability" id="reasons-stability">
     <div class="l-section__inner">
-      <img src="images/strengths.webp" alt="" loading="lazy">
+      <img src="images/reasons-stability.png" alt="" loading="lazy">
     </div>
   </section>
 
-  <section class="l-section results" id="results">
+  <!-- らしさが選ばれている理由 -->
+  <section class="l-section reasons-choice" id="reasons-choice">
     <div class="l-section__inner">
-      <img src="images/results.webp" alt="" loading="lazy">
+      <img src="images/reasons-choice.png" alt="" loading="lazy">
     </div>
   </section>
 
-  <section class="l-section comparison" id="comparison">
+  <!-- らしさ5つの強み -->
+  <section class="l-section strength" id="strength">
     <div class="l-section__inner">
-      <img src="images/comparison.webp" alt="" loading="lazy">
+      <img src="images/strength.png" alt="" loading="lazy">
     </div>
   </section>
 
-  <section class="l-section support" id="support">
+  <!-- オンライン説明会のご案内 -->
+   <!-- ボタン調整 -->
+  <section class="l-section info" id="info">
     <div class="l-section__inner">
-      <img src="images/support.webp" alt="" loading="lazy">
+      <img src="images/info.png" alt="" loading="lazy">
     </div>
   </section>
 
-  <section class="l-section advisor" id="advisor">
-    <div class="l-section__inner">
-      <img src="images/advisor.webp" alt="" loading="lazy">
-    </div>
-  </section>
-
-<!-- CTA②（特典付き） -->
-<section class="l-section cta-bonus">
-  <div class="l-section__inner">
-    <div class="cta__wrap">
-      <img src="images/cta-bonus-bg.webp" alt="">
-      <a href="リンク先URL" class="cta__btn">
-        <img src="images/btn.webp" alt="無料オンライン説明会に参加する">
-      </a>
-    </div>
-  </div>
-</section>
-
-
-  <section class="l-section faq" id="faq">
-    <div class="l-section__inner">
-      <img src="images/faq.webp" alt="" loading="lazy">
-    </div>
-  </section>
-
+  <!-- 代表メッセージ -->
   <section class="l-section message" id="message">
     <div class="l-section__inner">
-      <img src="images/message.webp" alt="" loading="lazy">
+      <img src="images/message.png" alt="" loading="lazy">
     </div>
   </section>
 
-<!-- CTA②（特典付き） -->
-<section class="l-section cta-bonus">
-  <div class="l-section__inner">
-    <div class="cta__wrap">
-      <img src="images/cta-bonus-bg.webp" alt="">
-      <a href="リンク先URL" class="cta__btn">
-        <img src="images/btn.webp" alt="無料オンライン説明会に参加する">
-      </a>
+  <!-- よくあるご質問 -->
+  <section class="l-section faq" id="faq">
+    <div class="l-section__inner">
+      <img src="images/faq.png" alt="" loading="lazy">
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="l-footer">
-  <div class="l-footer__inner">
-    <h2 class="l-footer__title">ヒカリテラス</h2>
-
-    <nav class="l-footer__nav">
-      <ul class="l-footer__nav-list">
-        <li class="l-footer__nav-item">
-          <a href="#video" class="l-footer__nav-link">動画で見る</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#intro" class="l-footer__nav-link">激動の時代</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#market" class="l-footer__nav-link">市場について</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#strengths" class="l-footer__nav-link">ヒカリテラスの強み</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#results" class="l-footer__nav-link">実績</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#comparison" class="l-footer__nav-link">他業種との比較</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#support" class="l-footer__nav-link">サポート体制</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#advisor" class="l-footer__nav-link">スペシャルサポーター</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#faq" class="l-footer__nav-link">よくあるご質問</a>
-        </li>
-        <li class="l-footer__nav-item">
-          <a href="#message" class="l-footer__nav-link">代表メッセージ</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="l-footer__bottom-nav">
-      <a href="#" class="l-footer__bottom-link">会社概要</a>
-      <a href="#" class="l-footer__bottom-link">運営者情報</a>
-      <a href="#" class="l-footer__bottom-link">プライバシーポリシー</a>
-      <a href="#" class="l-footer__bottom-link">特定商取引法に基づく表記</a>
+  <!-- 特典付きCTA -->
+  <section class="l-section cta-bonus">
+    <div class="l-section__inner">
+      <div class="cta__wrap">
+        <img src="images/cta-bonus-bg.png" alt="">
+        <a href="#" class="cta__btn">
+          <img src="images/btn-bonus.png" alt="無料オンライン説明会に参加する">
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="l-footer__copyright">
-      <p>© 2026 ヒカリテラス All rights reserved.</p>
+  <!-- フッター -->
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+      <h2 class="l-footer__title">らしさ</h2>
+
+      <nav class="l-footer__nav">
+        <ul class="l-footer__nav-list">
+          <li class="l-footer__nav-item">
+            <a href="#video" class="l-footer__nav-link">動画で見る</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#steps" class="l-footer__nav-link">説明会までの流れ</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#market" class="l-footer__nav-link">市場について</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#reasons-stability" class="l-footer__nav-link">手堅い理由</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#reasons-choice" class="l-footer__nav-link">選ばれる理由</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#strength" class="l-footer__nav-link">らしさの強み</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#info" class="l-footer__nav-link">説明会のご案内</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#message" class="l-footer__nav-link">代表メッセージ</a>
+          </li>
+          <li class="l-footer__nav-item">
+            <a href="#faq" class="l-footer__nav-link">よくあるご質問</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="l-footer__bottom-nav">
+        <a href="#" class="l-footer__bottom-link">会社概要</a>
+        <a href="#" class="l-footer__bottom-link">運営者情報</a>
+        <a href="#" class="l-footer__bottom-link">プライバシーポリシー</a>
+        <a href="#" class="l-footer__bottom-link">特定商取引法に基づく表記</a>
+      </div>
+
+      <div class="l-footer__copyright">
+        <p>© 2026 らしさ All rights reserved.</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- 追従CTA -->
- <!-- <div class="fixed-cta" id="fixedCta">
-  <div class="fixed-cta__inner">
-    <a href="リンク先URL">
-      <img src="images/cta.webp" alt="">
-    </a>
-  </div>
-</div> -->
-
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
